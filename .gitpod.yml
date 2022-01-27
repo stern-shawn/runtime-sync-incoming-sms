@@ -8,10 +8,6 @@ ports:
 tasks:
   - name: Dependencies and credentials
     init: make bootstrap
-    command: >
-      npm run start
-      ./get-creds.mjs
+    command: make server
   - name: Install twilio-cli + serverless-toolkit plugin
-    init: >
-      npm i -g twilio-cli
-		  twilio plugins:install @twilio-labs/plugin-serverless
+    init: make cli
