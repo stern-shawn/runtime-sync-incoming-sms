@@ -2,11 +2,11 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: |
+  - name: Dependencies and credentials
+    init: |
       npm i -g twilio-cli zx
       twilio plugins:install @twilio-labs/plugin-serverless
       npm install
       chmod +x ./get-creds.mjs
     	./get-creds.mjs
-    command: |
-      npm run start
+    command: npm run start
