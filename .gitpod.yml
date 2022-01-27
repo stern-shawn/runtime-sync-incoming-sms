@@ -4,6 +4,7 @@ image:
 ports:
   - port: 3000
     onOpen: open-preview
+    visibility: public
 
 tasks:
   - name: Install twilio-cli + serverless-toolkit plugin
