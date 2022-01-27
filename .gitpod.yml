@@ -3,10 +3,5 @@ image:
 
 tasks:
   - name: Dependencies and credentials
-    init: |
-      npm install
-      npm i -g twilio-cli zx
-      twilio plugins:install @twilio-labs/plugin-serverless
-      chmod +x ./get-creds.mjs
-      ./get-creds.mjs
+    init: make bootstrap
     command: npm run start
