@@ -1,6 +1,4 @@
 bootstrap:
 		npm install
-		npm i -g twilio-cli zx
-		twilio plugins:install @twilio-labs/plugin-serverless
+		npm i -g zx
 		chmod +x ./get-creds.mjs
-		./get-creds.mjs
