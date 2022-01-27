@@ -6,8 +6,8 @@ ports:
     onOpen: open-preview
 
 tasks:
+  - name: Install twilio-cli + serverless-toolkit plugin
+    init: make cli
   - name: Dependencies and credentials
     init: make bootstrap
     command: make server
-  - name: Install twilio-cli + serverless-toolkit plugin
-    init: make cli
